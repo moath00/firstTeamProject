@@ -11,6 +11,9 @@
     padding: 0 10px !important;
 }
 
+
+
+
 img {
     width: 100%;
 }
@@ -213,4 +216,52 @@ a {
 .container .explain .btn-row .ancor:hover {
     background-color: #000;
     color: white;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+
+.ml{
+  margin-left: 53rem;
+}
+
+
+.navbar-brand{
+  margin-left: 30px;
+}
+
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align:center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
 }
