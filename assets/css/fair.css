@@ -1,0 +1,4 @@
+.container .explain .more .next{
+    opacity: 0;
+    pointer-events: none;
+}

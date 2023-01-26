@@ -1,0 +1,216 @@
+/* general settings */
+
+*{
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container{
+    margin: 0 60px !important;
+    padding: 0 10px !important;
+}
+
+img {
+    width: 100%;
+}
+
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #d14031;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #d14031;
+  }
+
+/* event landing section */
+
+.event-land h6 {
+    text-transform:uppercase;
+}
+
+.event-land {
+    color: white;
+    align-content: center;
+    background-image: url(../images/event-title-area-img-1.jpg);
+    background-position: center;
+    background-position-y: -33px;
+    width: 100vw;
+    height: 50vh;
+}
+
+.event-land h1, .event-land h6 {
+    text-align: center;
+}
+
+/* evet date section */
+
+.event {
+    margin: 95px 0 35px !important;
+    padding-bottom: 30px !important;
+    border-bottom: 1px #dedede solid;
+}
+
+.container .event div h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 57px;    
+}
+.container .event div {
+    justify-content: space-between;
+    text-align: center;
+    margin-left: auto;
+    line-height: 30px;
+}
+
+.container .event div h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container .event .col-2 span{
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    border: 1px solid #000;
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: auto !important;
+}
+
+.container .event div p{
+    font-size: 12px;
+    letter-spacing: 3.5px;
+    color: #999;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* disapeard div for ancor in bottom button */
+.disapear {
+    display: none;
+}
+
+/* event explain section */
+.container .explain .books-photo, .container .explain .map {
+    padding: 5px !important;
+}
+.container .explain .ex-text {
+    font-size: 22px;
+    color: #555;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.container .explain .event-details {
+    margin: 60px 0 25px !important;
+}
+
+.container .explain .details-table {
+    padding: 25px 0 !important;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.container .explain .details-table .detail-item {
+    margin: 10px 0 !important;
+}
+
+.details-table .detail-item .title {
+    font-size: 21px;
+    display: inline-block;
+    margin-right: 30px !important;
+}
+
+.details-table .detail-item .item-content {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: .35em;
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container .explain .details-table .detail-item .hoverd {
+    transition: 0.3 color;
+}
+
+.container .explain .more {
+    justify-content: space-between !important;
+    margin-top: 10px !important;
+    padding: 20px 0 !important;
+    border-bottom: 1px solid #dedede;
+}
+
+.container .explain .more .social {
+    justify-content: center !important;
+    text-align: center;
+}
+
+.container .explain .more .social .col-1 a {
+    color: #000;
+    transition: 0.2s color;
+}
+
+.container .explain .more .social .col-1 a:hover {
+    color: #d14031;
+}
+
+.container .explain .more .next, .container .explain .more .previous {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #999;
+    font-size: 15px;
+}
+
+.container .explain .more .next {
+    text-align: right;
+    transition: 0.3s color;
+}
+
+
+.container .explain .more .next:hover, .container .explain .more .previous:hover,
+.container .explain .details-table .detail-item .hoverd:hover{
+    color: #d14031;
+}
+
+.container .explain .btn-row {
+    margin: 40px 0 150px !important;
+}
+
+.container .explain .btn-row .ancor {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    max-width: 180px;
+    letter-spacing: 3px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 15px 10px !important;
+    text-align: center;
+    transition: 0.2s background-color, 0.2s color;
+}
+
+.container .explain .btn-row .ancor:hover {
+    background-color: #000;
+    color: white;
+}

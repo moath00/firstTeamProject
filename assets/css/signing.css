@@ -1,0 +1,18 @@
+.container .explain .btn-row .ancor {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #dedede;
+    border: 1px solid #dedede;
+    padding: 15px 5px !important;
+    max-width: 160px;
+    text-align: center;
+    transition: 0.2s background-color, 0.2s color;
+    pointer-events: none;
+}
+
+.container .explain .btn-row .ancor:hover {
+    background-color: #dedede;
+    color: #fff;
+}
