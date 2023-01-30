@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/************** Book Promotions ********************************************************************************************/
+
+.promotions{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    margin: auto;
+    position: relative;
+    margin-top: 400px ;    /* the margin */
+    margin-bottom: 200px;
+}
+.promotions a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+.promotions a:hover{
+    color: #d14031;
+}
+.promotions h2{
+
+    font-size: 45px;
+    font-weight: 500;
+    position: relative;
+}
+
+.promotions h2::before{
+    content: "EVENTS";
+    position: absolute;
+    top: -20px;
+    left: 125px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #999;
+
+}
+
+.promotions .pro-bio{
+    max-width: 550px;
+    text-align: center;
+    font-size: 18px;
+}
+.promotions .pro-table{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 858px;
+    gap: 30px;
+}
+.promotions .pro-table .pro-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.promotions .pro-table .pro-row:nth-child(4){
+    border: 0;
+}
+.promotions .pro-table .pro-row .date-place{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    flex: 1.2;
+    color: #999;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.promotions .pro-table .pro-row .name{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+    flex: 1;
+}
+
+.promotions .pro-table .pro-row .name::before{
+    content: "|";
+    position: absolute;
+    left: -60px;
+    font-weight: 500;
+    color: #999;
+}
+
+.promotions .pro-table .pro-row .btn{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.circle{
+    background-color: rgba(239, 239, 241, 0.308);
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 5%;
+    z-index: -999;
+    clip-path: inset(250px 0 0px 0);
+}
+
+@media screen and (max-width:991px){
+    .promotions .pro-table{
+        width: 80vw;
+    }
+    .promotions .pro-table .pro-row .name::before{
+        display: none;
+    }
+}
+@media screen and (max-width:576px){
+    .promotions .pro-table .pro-row .name::before{
+        display: none;
+    }
+
+    .promotions .pro-table .pro-row{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+
+    .promotions .pro-table .pro-row .name{
+        margin-bottom: 20px !important;
+    }
+    .circle{
+    background-color: rgba(239, 239, 241, 0.308);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    left: 5%;
+    z-index: -999;
+    clip-path: inset(200px 0 0px 0);
+}
+}
+
+
+/*********************** autobiograghy *********************************************************************************************/
+/* first autobiography */
+
+.autobiography{
+    width: 92vw;
+    margin: auto;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 250px;  /* margin here */
+}
+
+.autobiography .first{
+    background-color: #e2e1db52;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.autobiography .left{
+    position: absolute;
+    margin: 300px 0px 0px 10vw;
+    transform: translateY(-50%);
+}
+.autobiography h2{
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.autobiography h2::before{
+    content: "AUTOBIOGRAPHY";
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #999;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.autobiography .bio{
+    max-width: 500px;
+    color: #999;
+    font-size: 19px;
+}
+
+.autobiography .btn{
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 0;
+    letter-spacing: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.autobiography .paris{
+    position: absolute;
+    width: 416px;
+    z-index: 4;
+    top: -9%;
+    left: 65%;
+    transform: translate(-50%, 0);
+
+}
+
+.autobiography .woman{
+    position: absolute;
+    width: 523px;
+    z-index: 5;
+    bottom: -20%;
+    left: 75%;
+    transform: translate(-50%, 0);
+}
+
+.autobiography .blue{
+    position: absolute;
+    width: 364px;
+    z-index: 0;
+    top: 14%;
+    left: 72%;
+    transform: translate(-50%, 0);
+    transform: rotateZ(0deg);
+}
+
+.autobiography .text1{
+    position: absolute;
+    width: 182px;
+    z-index: 0;
+    top: 13%;
+    left: 83%;
+    transform: translate(-50%, 0);
+    transform: rotateZ(0deg);
+}
+
+.autobiography .dots{
+    position: absolute;
+    width: 337px;
+    z-index: -1;
+    top: -9%;
+    left: 52.5%;
+    transform: translate(-50%, 0);
+}
+
+.autobiography .coffee{
+    position: absolute;
+    width: 243px;
+    bottom: 0;
+    left: 42.5%;
+    transform: translate(-50%, 25%);
+}
+
+@media screen and (max-width:1500px) and (min-width:992px){
+    .autobiography .left{
+        margin: 300px 0px 0px 3vw;
+    }
+
+    .autobiography .paris{
+        width: 25vw;
+        top: 0;
+    }
+    .autobiography .woman{
+        width: 28vw;
+        bottom: 0;
+    }
+    .autobiography .blue{
+        width: 30vw;
+    }
+    .autobiography .text1{
+        width: 130px;
+    }
+    
+    .autobiography .dots{
+        width: 337px;
+        left: 70%;
+        top: 20%;
+    }
+
+    .autobiography .coffee{
+        width: 15vw;
+    }
+}
+@media screen and (max-width:991px){
+    .autobiography .paris{
+        max-width: 250px;
+        top: 31%;
+        left: 85%;
+    }
+    .autobiography .woman{
+        max-width: 250px;
+        bottom: 0;
+    }
+    .autobiography .blue{
+        width: 30vw;
+    }
+    .autobiography .text1{
+        width: 130px;
+    }
+
+    .autobiography .dots{
+        width: 250px;
+        left: 65%;
+        top: 50%;
+    }
+
+    .autobiography .coffee{
+        width: 15vw;
+    }
+
+}
+
+
+@media screen and (max-width:870px){
+    .autobiography .paris{
+        max-width: 200px;
+        top: -10%;
+        left: 40%;
+    }
+    .autobiography .woman{
+        max-width: 200px;
+        bottom: -10%;
+    }
+    .autobiography .blue{
+        width: 200px;
+        top: -10%;
+        left: 35%;
+    }
+    .autobiography .text1{
+        width: 80px;
+        top: 0;
+        left: 65%;
+    }
+
+    .autobiography .dots{
+        width: 200px;
+        left: 50%;
+        top: 70%;
+        transform: rotate(-90deg);
+    }
+
+    .autobiography .coffee{
+        width: 15vw;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    .autobiography .paris{
+        max-width: 150px;
+        top: -10%;
+        left: 40%;
+    }
+    .autobiography .woman{
+        max-width: 150px;
+        bottom: -10%;
+    }
+    .autobiography .blue{
+        width: 150px;
+        top: -10%;
+        left: 35%;
+    }
+    .autobiography .text1{
+        width: 80px;
+        top: 0;
+        left: 65%;
+    }
+
+    .autobiography .dots{
+        width: 200px;
+        left: 50%;
+        top: 70%;
+        transform: rotate(-90deg);
+    }
+
+    .autobiography .coffee{
+        width: 15vw;
+        left: 20%;
+    }
+
+
+}
+
+
+
+
+/* second autobiography */
+.autobiography .seconed{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 250px;
+}
+
+.autobiography .seconed .right{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.autobiography .seconed h2{
+    position: relative;
+    max-width: 400px;
+    margin: 0 12vw 0 0;
+}
+.autobiography .seconed h2::before{
+    position: absolute;
+    top: -50%;
+    left: 13%;
+}
+.autobiography .seconed .right .bio{
+    max-width: 450px;
+}
+
+.autobiography .seconed .building{
+    position: absolute;
+    max-width: 523px;
+    top: 0;
+    left: 25%;
+    z-index: 3;
+}
+.autobiography .seconed .woman2{
+    position: absolute;
+    max-width: 307px;
+    bottom: -3%;
+    left: 14%;
+    z-index: 5;
+}
+.autobiography .seconed .yellow{
+    position: absolute;
+    max-width: 470px;
+    top: 36%;
+    left: 37%;
+    z-index: -1;
+}
+.autobiography .seconed .dashes{
+    position: absolute;
+    max-width: 348px;
+    top: 5%;
+    left: 13%;
+}
+.autobiography .seconed .kite{
+    position: absolute;
+    max-width: 364px;
+    bottom: 0;
+    left: 75%;
+}
+.autobiography .seconed .text2{
+    position: absolute;
+    max-width: 258px;
+    bottom: -5%;
+    left: 35%;
+}
+
+@media screen and (max-width: 1550px){
+    .autobiography .seconed .building{
+        max-width: 523px;
+        top: 0;
+        left: 13%;
+    }
+    .autobiography .seconed .woman2{
+        max-width: 307px;
+        bottom: -3%;
+        left: 0%;
+    }
+    .autobiography .seconed .yellow{
+        max-width: 470px;
+        top: 36%;
+        left: 25%;
+    }
+    .autobiography .seconed .dashes{
+        max-width: 348px;
+        top: 5%;
+        left: 0%;
+    }
+    .autobiography .seconed .kite{
+        max-width: 300px;
+        bottom: 0;
+        left: 75%;
+    }
+    .autobiography .seconed .text2{
+        max-width: 258px;
+        bottom: -5%;
+        left: 28%;
+    }
+
+}
+
+@media screen and (max-width: 1315px){
+    .autobiography .seconed .building{
+        max-width: 350px;
+        top: 5%;
+        left: 10%;
+    }
+    .autobiography .seconed .woman2{
+        max-width: 207px;
+        bottom: 25%;
+        left: 0%;
+    }
+    .autobiography .seconed .yellow{
+        max-width: 360px;
+        top: 24%;
+        left: 18%;
+    }
+    .autobiography .seconed .dashes{
+        max-width: 250px;
+        top: 5%;
+        left: 0%;
+    }
+    .autobiography .seconed .kite{
+        max-width: 250px;
+        bottom: 5%;
+        left: 75%;
+    }
+    .autobiography .seconed .text2{
+        max-width: 200px;
+        bottom: 20%;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1050px){
+    .autobiography .seconed .right{
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translate(50%,-50%);
+    }
+    .autobiography .seconed .right .bio{
+       max-width: 400px;
+    }
+    .autobiography .seconed .building{
+        max-width: 350px;
+        top: 5%;
+        left: 10%;
+    }
+    .autobiography .seconed .woman2{
+        max-width: 207px;
+        bottom: 25%;
+        left: 0%;
+    }
+    .autobiography .seconed .yellow{
+        max-width: 360px;
+        top: 24%;
+        left: 16%;
+    }
+    .autobiography .seconed .dashes{
+        max-width: 250px;
+        top: 5%;
+        left: 0%;
+    }
+    .autobiography .seconed .kite{
+        max-width: 200px;
+        bottom: 10%;
+        left: 70%;
+    }
+    .autobiography .seconed .text2{
+        max-width: 200px;
+        bottom: 10%;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 870px) and (min-width:680px){
+    .autobiography .seconed .right{
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        transform: translate(50%,-50%);
+    }
+    .autobiography .seconed .right .bio{
+       max-width: 400px;
+    }
+    .autobiography .seconed .building{
+        display: none;
+    }
+    .autobiography .seconed .woman2{
+        max-width: 250px;
+        bottom: 25%;
+        left: 0%;
+    }
+    .autobiography .seconed .yellow{
+        max-width: 300px;
+        top: 30%;
+        left: 5%;
+    }
+    .autobiography .seconed .dashes{
+        max-width: 250px;
+        top: 5%;
+        left: 0%;
+    }
+    .autobiography .seconed .kite{
+        max-width: 150px;
+        bottom: 10%;
+        left: 70%;
+    }
+    .autobiography .seconed .text2{
+        max-width: 150px;
+        bottom: 14%;
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .autobiography .seconed .right{
+        position: absolute;
+        top: 25%;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+    .autobiography .seconed .right .bio{
+       max-width: 300px;
+    }
+    .autobiography .seconed .building{
+        display: none;
+    }
+    .autobiography .seconed .woman2{
+        max-width: 200px;
+        bottom: 5%;
+        left: 45%;
+    }
+    .autobiography .seconed .yellow{
+        max-width: 200px;
+        top: 70%;
+        left: 60%;
+        z-index: 1;
+    }
+    .autobiography .seconed .dashes{
+        max-width: 200px;
+        top: 55%;
+        left: 20%;
+    }
+    .autobiography .seconed .kite{
+        max-width: 80px;
+        bottom: 50%;
+        left: 80%;
+    }
+    .autobiography .seconed .text2{
+        max-width: 120px;
+        bottom: 10%;
+        left: 5%;
+        z-index: 2;
+    }
+}
+
+
+/* ************gallery (under development) **********************************************************************************************/
+.gallery{
+    background-color: #69251d;
+    width: 95vw;
+    height: 500px;
+    margin: 150px auto 0 auto;
+}
