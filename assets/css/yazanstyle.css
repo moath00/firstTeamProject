@@ -17,7 +17,7 @@
     font-family: 'Cormorant Garamond', serif;
     margin: auto;
     position: relative;
-    margin-top: 400px ;    /* the margin */
+    margin-top: 200px ;    /* the margin */
     margin-bottom: 200px;
 }
 .promotions a{
@@ -661,9 +661,10 @@
 
 
 /* ************gallery (under development) **********************************************************************************************/
-.gallery{
-    background-color: #69251d;
-    width: 95vw;
-    height: 500px;
-    margin: 150px auto 0 auto;
+.gallery img{
+    transform: scale(1);
+    transition: transform .4s;
+}
+.gallery img:hover{
+    transform: scale(1.05);
 }
