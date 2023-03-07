@@ -236,4 +236,17 @@ body .myContainer {
     .myContainer .tichets .col-3 .btn-row .ancor {
         margin: auto !important;
     }
+
+    .myContainer .tichets .orderFirst {
+        order: 1;
+    }
+    
+    .myContainer .tichets .orderSeconed {
+        order: 3;
+        margin-top: 10px !important;
+    }
+
+    .myContainer .tichets .orderThird a{
+        order: 2;
+    }
 }
