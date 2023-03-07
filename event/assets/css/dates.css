@@ -6,6 +6,10 @@
 
 /* heading start */
 
+.container {
+    margin: 0 auto !important;
+}
+
 .container .heading {
     margin: 120px auto 50px !important;
 }
@@ -35,7 +39,9 @@
 }
 
 @media screen and (max-width: 885px) {
-
+    .container .heading p{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -123,9 +129,91 @@ body .myContainer {
     color: white;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width:1015px) {
     
+    .myContainer .tichets .col-4 a {
+        margin-left: 25px !important;
+    }
+
+    .myContainer .tichets .col-4 p {
+        margin: 18px auto !important;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding-right: 10px !important;
+    }
 }
+
+@media screen and (max-width: 950px) {
+    
+    .myContainer .tichets .col-4 a {
+        margin-left: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .myContainer .tichets .col-4 a {
+        margin-left: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 865px) {
+    .myContainer .tichets .col-4 a {
+        font-size: 20px;
+    }
+
+    .myContainer .tichets .col-3 .btn-row #disable {
+        font-size: 10px;
+    }
+    .myContainer .tichets .col-3 .btn-row .ancor {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .myContainer .tichets .col-3 .btn-row #disable {
+        padding: 10px 6px !important;
+    }
+    .myContainer .tichets .col-3 .btn-row .ancor {
+        padding: 10px 6px !important;
+    }
+}
+
+@media screen and (max-width:705px) {
+
+    .myContainer .tichets .col-4 p {
+        border-right: none;
+    }
+
+    .myContainer .tichets {
+        align-items: center;
+    }
+    .myContainer .tichets .orderFirst {
+        order: 3;
+        width: calc(8*(100%/12));
+        border-right: 1px solid #dedede;
+    }
+    
+    .myContainer .tichets .orderSeconed {
+        order: 2;
+        margin-top: 30px !important;
+    }
+
+    .myContainer .tichets .orderThird {
+        order: 1;
+        width: calc(8*(100%/12));
+        border-right: 1px solid #dedede;
+    }
+
+    .myContainer .tichets .orderThird a{
+        margin-left: 0 !important;
+    }
+}
+
 @media screen and (max-width: 576px){
     .myContainer {
         margin: 12% !important;
@@ -135,9 +223,11 @@ body .myContainer {
         border: none !important;
         width: 100%;
         text-align: center;
+        border: none;
     }
     .myContainer .tichets .sm-12 {
         text-align: center;
+        border: none;
     }
     .myContainer .tichets .sm-12 a {
         text-align: center;
