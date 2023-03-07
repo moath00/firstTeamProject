@@ -85,8 +85,9 @@ body .myContainer {
     color: #000;
     font-size: 25px;
     line-height: 48px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 40px !important;
+    transition: 0.3s color;
 }
 
 .myContainer .tichets .col-3 {
@@ -127,6 +128,10 @@ body .myContainer {
 .myContainer .tichets .col-3 .btn-row .ancor:hover {
     background-color: #000;
     color: white;
+}
+
+.myContainer .tichets .col-4 a:hover {
+    color: #d14031;
 }
 
 @media screen and (max-width:1015px) {
