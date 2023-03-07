@@ -7,7 +7,7 @@
 }
 
 .container{
-    margin: 0 60px !important;
+    margin: 0 auto !important;
     padding: 0 10px !important;
 }
 
@@ -44,10 +44,7 @@ a {
 }
 
 @media screen and (max-width: 885px) {
-    .container {
-        padding: 0 60px !important;
-        margin: 0 !important;
-    }
+
 }
 
 @media screen and (max-width:576px){
@@ -153,6 +150,45 @@ a {
 /* disapeard div for ancor in bottom button */
 .disapear {
     display: none;
+}
+
+@media screen and (max-width: 992px) {
+    
+    .container .event div {
+        width: calc(2*(100%/12));
+    }
+    .container .event div h2 {
+        font-size: 30px;
+        line-height: 50px;    
+    }
+    
+    .container .event div h3{
+        font-size: 22px;
+    }
+
+    .container .event .col-2 {
+        width: calc(3*(100%/12));
+    }
+
+    .container .event .empty {
+        width: 0;
+    }
+
+    .container .event .oneSpace {
+        width: calc((100%/12));
+    }
+    
+    .container .event .col-2 span{
+        font-size: 11px;
+    }
+    
+    .container .event div p{
+        font-size: 12px;
+        letter-spacing: 3.5px;
+        color: #999;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+    }
 }
 
 @media screen and (max-width: 885px) {
@@ -324,19 +360,79 @@ a {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .container .explain .map iframe {
+        height: 400px;
+    }
+
+    .container .explain .more .previous {
+        width: 14% !important;
+    }
+
+    .container .explain .btn-row .ancor {
+        padding: 10px 0 !important;
+    }
+}
+
 @media screen and (max-width: 885px) {
     
+}
+
+@media screen and (max-width:768px) {
+
+    .container .event {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .event div, .container .event div h2, .container .event div h3, .container .event div span{
+        width: 100% !important;
+        text-align: center;
+        margin: auto !important;
+    }
+
+    .container .event .col-2 span{
+        width: 35% !important;
+        margin: auto !important;
+    }
+    
+    .container .explain .btn-row .ancor {
+        letter-spacing: 1px;
+    }
+
+    .container .explain .more .previous {
+        width: 18% !important;
+    }
+
+    .container .explain .more .next {
+        width: 14% !important;
+    }
+
+    .details-table .detail-item .title {
+        font-size: 19px !important;
+        margin-right: 0 !important;
+    }
+
+    .container .explain .map iframe {
+        height: 300px;
+    }
+
+    .details-table .detail-item .item-content {
+        letter-spacing: 2px;
+    }
 }
 
 @media screen and (max-width:576px){
 
     .container .explain .books-photo, .container .explain .map {
+        width: 100% !important;
         height: 120%;
         margin: 0 !important;
     }
     .container .explain .books-photo img, .container .explain .map iframe {
-        height: 100%;
-        margin: 0 !important;
+        width: 100% !important;
+        height: 250px;
+        margin: 10px 0 0 !important;
         padding: 0 !important;
     }
     .container .explain .ex-text {
@@ -344,6 +440,7 @@ a {
     }
     .container .explain .details-table .detail-item {
         font-weight: 300;
+        width: 100% !important;
     }
     .details-table .detail-item .title {
         font-weight: 300;
@@ -355,7 +452,7 @@ a {
         font-size: 11px;
     }
     .container .explain .more .social .col-1 {
-        margin-right:12px !important;
+        margin-right:5px !important;
         text-align: center;
     }
     #less-m {
@@ -364,12 +461,16 @@ a {
     .container .explain .more .next, .container .explain .more .previous {
         margin-top: 2px !important;
         font-size: 13px;
-        width:  16% !important;
+        width:  100% !important;
     }
-    .container .explain .more .previous {
-        width: 25% !important;
+    .container .explain .more .next {
+        text-align: right;
     }
-    .container .explain .btn-row {
-        margin: 40px 0 150px !important;
+    .container .explain .more .social {
+        width: 100%;
+        margin: auto !important;
+    }
+    .container .explain .btn-row .ancor {
+        width: calc(3*(100%/12)) !important;
     }
 }
