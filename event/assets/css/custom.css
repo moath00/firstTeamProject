@@ -358,6 +358,22 @@ a {
     .container .explain .more .previous {
         width: 12% !important;
     }
+
+    .container .explain .books-photo, .container .explain .map {
+        padding: 2px !important;
+        width: 49% !important;
+        margin: 0 !important;
+    }
+
+    .container .explain .map {
+        margin-left: auto !important;
+    }
+
+    .container .explain .books-photo img, .container .explain .map iframe {
+        width: 100%;
+        height: 100%;
+        margin: 0 !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -371,6 +387,22 @@ a {
 
     .container .explain .btn-row .ancor {
         padding: 10px 0 !important;
+    }
+
+    .container .explain .books-photo, .container .explain .map {
+        padding: 2px !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .container .explain .map {
+        margin: 20px 0 0 !important;
+    }
+
+    .container .explain .books-photo img, .container .explain .map iframe {
+        width: 100%;
+        height: 400px !important;
+        margin: 0 !important;
     }
 }
 
@@ -415,10 +447,18 @@ a {
 
     .container .explain .map iframe {
         height: 300px;
+        margin: 0 !important;
     }
 
     .details-table .detail-item .item-content {
         letter-spacing: 2px;
+    }
+    .container .explain .map {
+        margin: 12px 0 0 !important;
+    }
+
+    .container .explain .books-photo img, .container .explain .map iframe {
+        height: 300px !important;
     }
 }
 
@@ -471,6 +511,6 @@ a {
         margin: auto !important;
     }
     .container .explain .btn-row .ancor {
-        width: calc(3*(100%/12)) !important;
+        width: calc(5*(100%/12)) !important;
     }
 }
